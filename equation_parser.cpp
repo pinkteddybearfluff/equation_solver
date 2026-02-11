@@ -4,8 +4,8 @@
 
 #include "equation_parser.h"
 
-vector<string> var_table;
 
+//returns a string with only alphabet and digits
 string get_string()
 {
     char ch;
@@ -23,9 +23,10 @@ string get_string()
     return my_string;
 }
 
-bool is_unique(string var_name)
+//checks if an unknown is new or old
+bool is_unique(string var_name, vector<string>& var_table)
 {
-    for (string var : var_table)
+    for (const string& var : var_table)
     {
         if (var == var_name)
         {
@@ -35,7 +36,8 @@ bool is_unique(string var_name)
     return true;
 }
 
-int get_colv(string var_name)
+//get column number for the respective variable name in order of declaration
+int get_colv(string var_name, vector<string>& var_table)
 {
     for (int i = 0; i < var_table.size(); i++)
     {
@@ -44,13 +46,15 @@ int get_colv(string var_name)
             return i;
         }
     }
+    error("Unknown variable name");
 }
 
-//Todo: may be instead of returning a matrix vector i can return a user defined type which has both matrix vector and variables vector.
-
+//read equations character by character
 systemOfEq equation_parser(int n_eq, int n_unk)
 {
+    //Augmented matrix
     vector<vector<double>> matrix(n_eq, vector<double>(n_unk + 1));
+    vector<string> var_table;
 
     char ch;
     bool has_coeff;
@@ -79,17 +83,20 @@ systemOfEq equation_parser(int n_eq, int n_unk)
         {
             cin.putback(ch);
             var_name = get_string();
-            if (is_unique(var_name))
+
+            //Variable declaration for new variable
+            if (is_unique(var_name, var_table))
             {
                 var_table.push_back(var_name);
             }
+
             if (has_coeff)
             {
-                matrix[equation_no][get_colv(var_name)] = sign * coeff;
+                matrix[equation_no][get_colv(var_name, var_table)] = sign * coeff;
             }
             else
             {
-                matrix[equation_no][get_colv(var_name)] = sign;
+                matrix[equation_no][get_colv(var_name, var_table)] = sign;
             }
             sign = 1;
             has_coeff = false;

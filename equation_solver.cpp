@@ -20,10 +20,10 @@
 #include <vector>
 #include "matrix_utilities.h"
 #include "equation_parser.h"
+#include "facilities.h"
 
 using namespace std;
 
-void error(string s);
 
 int main()
 {
@@ -52,7 +52,3 @@ int main()
     return 0;
 }
 
-void error(const string& s)
-{
-    throw runtime_error(s);
-}
