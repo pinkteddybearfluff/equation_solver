@@ -4,7 +4,6 @@
 
 #include "equation_parser.h"
 
-
 //returns a string with only alphabet and digits
 string get_string()
 {
@@ -110,6 +109,20 @@ systemOfEq equation_parser(int n_eq, int n_unk)
             int rhs;
             cin >> rhs;
             matrix[equation_no][3] = rhs;
+        }
+        else if (isspace(ch)) { continue; }
+        else
+        {
+            error("unknown character");
+        }
+
+        if (var_table.size() > n_unk)
+        {
+            error("Too many variables than expected");
+        }
+        else if (var_table.size() == 0)
+        {
+            error("expected at least one variable");
         }
     }
 

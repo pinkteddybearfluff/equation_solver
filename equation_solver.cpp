@@ -27,28 +27,48 @@ using namespace std;
 
 int main()
 {
-    int n_unk, n_eq;
-    cout << "Enter number of unknowns:";
-    cin >> n_unk;
-    cout << "Enter number of equations:";
-    cin >> n_eq;
-    vector<vector<double>> matrix(n_eq, vector<double>(n_unk + 1));
-
-    //Gives augmented matrix as well as unknowns
-    systemOfEq equations = equation_parser(n_eq, n_unk);
-
-    //Apply gaussian elimination on augmented matrix to form lower triangular matrix
-    apply_gaussian(n_unk, n_eq, equations.matrix);
-
-    //Apply Jordan elimination on augmented matrix to form Identity like matrix
-    apply_jordan(n_unk, n_eq, equations.matrix);
-
-    print_matrix(equations.matrix);
-
-    for (int i = 0; i < equations.var_table.size(); i++)
+    try
     {
-        cout << equations.var_table[i] << " = " << equations.matrix[i][n_unk] << '\n';
+        int n_unk, n_eq;
+        cout << "Enter number of unknowns:";
+        cin >> n_unk;
+        if (!cin || n_unk <= 0)
+        {
+            error("expected a non-zero integer");
+        }
+        cout << "Enter number of equations:";
+        cin >> n_eq;
+        if (!cin || n_eq <= 0)
+        {
+            error("expected a non-zero integer");
+        }
+        vector<vector<double>> matrix(n_eq, vector<double>(n_unk + 1));
+
+        //Gives augmented matrix as well as unknowns
+        systemOfEq equations = equation_parser(n_eq, n_unk);
+
+        //Apply gaussian elimination on augmented matrix to form lower triangular matrix
+        apply_gaussian(n_unk, n_eq, equations.matrix);
+
+        //Apply Jordan elimination on augmented matrix to form Identity like matrix
+        apply_jordan(n_unk, n_eq, equations.matrix);
+
+        print_matrix(equations.matrix);
+
+        for (int i = 0; i < equations.var_table.size(); i++)
+        {
+            cout << equations.var_table[i] << " = " << equations.matrix[i][n_unk] << '\n';
+        }
+        return 0;
     }
-    return 0;
+    catch (exception& e)
+    {
+        cerr << e.what() << '\n';
+        return 1;
+    }
+    catch (...)
+    {
+        cerr << "unknown exception" << '\n';
+    }
 }
 
