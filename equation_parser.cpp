@@ -1,7 +1,3 @@
-//
-// Created by wcosmo on 2/11/26.
-//
-
 #include "equation_parser.h"
 
 //returns a string with only alphabet and digits

@@ -1,7 +1,3 @@
-//
-// Created by wcosmo on 2/11/26.
-//
-
 #include "matrix_utilities.h"
 
 void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)

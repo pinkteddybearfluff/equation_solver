@@ -1,6 +1,3 @@
-//
-// Created by wcosmo on 2/1/26.
-//
 
 /*
  2x + y + z = 5;
