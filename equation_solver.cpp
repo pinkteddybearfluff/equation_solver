@@ -12,7 +12,14 @@
  4x1 - 6x2 = -2;
  -2x1 + 7x2 + 2x3 = 9;
 
+2one + two + three = 5;
+4one - 6two = -2;
+-2one + 7two + 2three = 9;
  ans = 1, 1, 2
+
+ x + y = 3;
+ x - y = 5;
+ ans = 4, -1
  */
 
 #include <iostream>
