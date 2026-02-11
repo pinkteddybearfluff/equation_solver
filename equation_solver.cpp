@@ -34,20 +34,18 @@ int main()
     try
     {
         int n_unk, n_eq;
-        cout << "Enter number of unknowns:";
+        cout << "Enter system of equations for which number of unknowns is equal to number of equations.\n";
+        cout << "Enter number of equations:";
         cin >> n_unk;
+        n_eq = n_unk;
         if (!cin || n_unk <= 0)
         {
             error("expected a non-zero integer");
         }
-        cout << "Enter number of equations:";
-        cin >> n_eq;
-        if (!cin || n_eq <= 0)
-        {
-            error("expected a non-zero integer");
-        }
+
         vector<vector<double>> matrix(n_eq, vector<double>(n_unk + 1));
 
+        cout << "Enter system of linear equations terminated by a semicolon(;) :\n";
         //Gives augmented matrix as well as unknowns
         systemOfEq equations = equation_parser(n_eq, n_unk);
 
@@ -70,9 +68,14 @@ int main()
         cerr << e.what() << '\n';
         return 1;
     }
+    catch (InconsistentSystem)
+    {
+        cerr << "The system of linear equations is inconsistent.\n";
+        return 2;
+    }
     catch (...)
     {
-        cerr << "unknown exception" << '\n';
+        cerr << "unknown exception\n";
     }
 }
 
