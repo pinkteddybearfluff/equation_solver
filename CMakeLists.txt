@@ -8,7 +8,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(matrix
         #        test.cpp
         #        equation_parser.cpp
-        matrix.cpp
-        equation_.cpp
+        equation_solver.cpp
+        equation_parser.cpp
         matrix_utilities.cpp
 )

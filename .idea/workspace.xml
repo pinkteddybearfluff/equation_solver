@@ -106,7 +106,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="C/C++ File.matrix.cpp">
+  <component name="RunManager" selected="CMake Application.matrix">
     <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
       <method v="2">
         <option name="CLION.EXTERNAL.BUILD" enabled="true" />
@@ -176,7 +176,7 @@
       <workItem from="1770710678199" duration="550000" />
       <workItem from="1770781947340" duration="2453000" />
       <workItem from="1770795781106" duration="6107000" />
-      <workItem from="1770811539031" duration="708000" />
+      <workItem from="1770811539031" duration="1806000" />
     </task>
     <servers />
   </component>
