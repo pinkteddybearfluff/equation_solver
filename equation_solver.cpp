@@ -1,6 +1,3 @@
-//
-// Created by wcosmo on 2/1/26.
-//
 
 /*
  2x + y + z = 5;
@@ -12,7 +9,14 @@
  4x1 - 6x2 = -2;
  -2x1 + 7x2 + 2x3 = 9;
 
+2one + two + three = 5;
+4one - 6two = -2;
+-2one + 7two + 2three = 9;
  ans = 1, 1, 2
+
+ x + y = 3;
+ x - y = 5;
+ ans = 4, -1
  */
 
 #include <iostream>
@@ -30,20 +34,18 @@ int main()
     try
     {
         int n_unk, n_eq;
-        cout << "Enter number of unknowns:";
+        cout << "Enter system of equations for which number of unknowns is equal to number of equations.\n";
+        cout << "Enter number of equations:";
         cin >> n_unk;
+        n_eq = n_unk;
         if (!cin || n_unk <= 0)
         {
             error("expected a non-zero integer");
         }
-        cout << "Enter number of equations:";
-        cin >> n_eq;
-        if (!cin || n_eq <= 0)
-        {
-            error("expected a non-zero integer");
-        }
+
         vector<vector<double>> matrix(n_eq, vector<double>(n_unk + 1));
 
+        cout << "Enter system of linear equations terminated by a semicolon(;) :\n";
         //Gives augmented matrix as well as unknowns
         systemOfEq equations = equation_parser(n_eq, n_unk);
 
@@ -66,9 +68,14 @@ int main()
         cerr << e.what() << '\n';
         return 1;
     }
+    catch (InconsistentSystem)
+    {
+        cerr << "The system of linear equations is inconsistent.\n";
+        return 2;
+    }
     catch (...)
     {
-        cerr << "unknown exception" << '\n';
+        cerr << "unknown exception\n";
     }
 }
 

@@ -1,8 +1,5 @@
-//
-// Created by wcosmo on 2/11/26.
-//
-
 #include "matrix_utilities.h"
+
 
 void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
 {
@@ -26,6 +23,19 @@ void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
             }
         }
 
+        if (matrix[i][i] == 0)
+        {
+            if (matrix[i][i + 1] != 0)
+            {
+                cout << "System has no solution. \n";
+                throw InconsistentSystem();
+            }
+            else
+            {
+                cout << "System has infinite solutions.\n";
+                throw InconsistentSystem();
+            }
+        }
         for (int j = i + 1; j < n_eq; ++j)
         {
             const double multiplier = matrix[j][i] / matrix[i][i];

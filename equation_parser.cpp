@@ -1,7 +1,3 @@
-//
-// Created by wcosmo on 2/11/26.
-//
-
 #include "equation_parser.h"
 
 //returns a string with only alphabet and digits
@@ -103,12 +99,26 @@ systemOfEq equation_parser(int n_eq, int n_unk)
         else if (ch == ';')
         {
             ++equation_no;
+            if (var_table.empty())
+            {
+                error("expected at least one variable");
+            }
         }
         else if (ch == '=')
         {
             int rhs;
             cin >> rhs;
-            matrix[equation_no][3] = rhs;
+            matrix[equation_no][n_unk] = rhs;
+        }
+        else if (isspace(ch)) { continue; }
+        else
+        {
+            error("unknown character");
+        }
+
+        if (var_table.size() > n_unk)
+        {
+            error("Too many variables than expected");
         }
         else if (isspace(ch)) { continue; }
         else
