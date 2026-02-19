@@ -26,7 +26,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5ee34ad1-dc46-4d30-8e02-cabc4d1f5e53" name="Changes" comment="" />
+    <list default="true" id="5ee34ad1-dc46-4d30-8e02-cabc4d1f5e53" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_utilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_utilities.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/matrix_utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_utilities.h" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -80,6 +85,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "C/C++ File.equation_solver.cpp.executor": "Run",
     "C/C++ File.matrix.cpp.executor": "Run",
     "C/C++ File.test_file.cpp.executor": "Run",
     "CMake Application.matrix.executor": "Run",
@@ -106,12 +112,7 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="CMake Application.matrix">
-    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true">
-      <method v="2">
-        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="C/C++ File.equation_solver.cpp">
     <configuration name="matrixSuite" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
     </configuration>
@@ -123,6 +124,12 @@
     <configuration name="matrixSuite" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="matrixSuite" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="matrixSuite" RUN_TARGET_NAME="matrixSuite">
       <method v="2">
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="equation_solver.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="equation_solver.cpp" CONFIG_NAME="equation_solver.cpp">
+      <option name="sourceFile" value="equation_solver.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="matrix.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="matrix.cpp" CONFIG_NAME="matrix.cpp">
@@ -144,6 +151,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="C/C++ File.equation_solver.cpp" />
       <item itemvalue="C/C++ File.matrix.cpp" />
       <item itemvalue="C/C++ File.test_file.cpp" />
       <item itemvalue="CMake Application.matrixSuite" />
@@ -152,6 +160,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.equation_solver.cpp" />
         <item itemvalue="C/C++ File.matrix.cpp" />
         <item itemvalue="C/C++ File.test_file.cpp" />
       </list>
@@ -177,6 +186,8 @@
       <workItem from="1770781947340" duration="2453000" />
       <workItem from="1770795781106" duration="6107000" />
       <workItem from="1770811539031" duration="4171000" />
+      <workItem from="1770827139144" duration="1599000" />
+      <workItem from="1771478724209" duration="108000" />
     </task>
     <servers />
   </component>
