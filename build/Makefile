@@ -153,29 +153,29 @@ equation_parser.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/equation_parser.cpp.s
 .PHONY : equation_parser.cpp.s
 
-main.o: main.cpp.o
-.PHONY : main.o
+equation_solver.o: equation_solver.cpp.o
+.PHONY : equation_solver.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/main.cpp.o
-.PHONY : main.cpp.o
+equation_solver.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o
+.PHONY : equation_solver.cpp.o
 
-main.i: main.cpp.i
-.PHONY : main.i
+equation_solver.i: equation_solver.cpp.i
+.PHONY : equation_solver.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/main.cpp.i
-.PHONY : main.cpp.i
+equation_solver.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/equation_solver.cpp.i
+.PHONY : equation_solver.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+equation_solver.s: equation_solver.cpp.s
+.PHONY : equation_solver.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/main.cpp.s
-.PHONY : main.cpp.s
+equation_solver.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/matrix_utilities.dir/build.make CMakeFiles/matrix_utilities.dir/equation_solver.cpp.s
+.PHONY : equation_solver.cpp.s
 
 matrix_utilities.o: matrix_utilities.cpp.o
 .PHONY : matrix_utilities.o
@@ -213,9 +213,9 @@ help:
 	@echo "... equation_parser.o"
 	@echo "... equation_parser.i"
 	@echo "... equation_parser.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
+	@echo "... equation_solver.o"
+	@echo "... equation_solver.i"
+	@echo "... equation_solver.s"
 	@echo "... matrix_utilities.o"
 	@echo "... matrix_utilities.i"
 	@echo "... matrix_utilities.s"

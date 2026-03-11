@@ -11,7 +11,6 @@ int main()
     try
     {
         int n_unk, n_eq;
-        std::cout << "Enter system of equations for which number of unknowns is equal to number of equations.\n";
         std::cout << "Enter number of equations: ";
         std::cin >> n_eq;
         std::cout << "Enter number of unknowns: ";
@@ -21,44 +20,43 @@ int main()
             error("expected a non-zero integer");
         }
 
-        std::vector<std::vector<double>> matrix(n_eq, std::vector<double>(n_unk + 1));
+        std::vector matrix(n_eq, std::vector<double>(n_unk + 1));
 
         std::cout << "Enter system of linear equations terminated by a semicolon(;) :\n";
         //Gives augmented matrix as well as unknowns
         systemOfEq equations = equation_parser(n_eq, n_unk);
 
         //Apply gaussian elimination on augmented matrix to form lower triangular matrix
-        apply_gauss_f_singular(equations.matrix);
-        apply_jordan_f_singular(equations.matrix);
-
-        std::vector<std::string> free_variables = get_free_variables(equations);
-        for (std::string free_variable : free_variables)
+        if (n_eq == n_unk && apply_gaussian(n_unk, n_eq, equations.matrix) == 0)
         {
-            std::cout << free_variable << '\n';
-        }
-
-        print_matrix(equations.matrix);
-        std::vector<std::vector<double>> independent_vectors = get_independent_vectors(equations);
-        std::cout << "A Basis of solution space:\n";
-        for (int i = 0; i < equations.var_table.size(); i++)
-        {
-            for (int j = 0; j < independent_vectors.size(); j++)
+            std::cout << "The solution is: \n";
+            for (int i = 0; i < equations.var_table.size(); ++i)
             {
-                std::cout << std::setw(4) << '|' << independent_vectors[j][i] << " ";
+                std::cout << equations.var_table[i] << " = " << equations.matrix[i][n_unk] << '\n';
             }
-            std::cout << '|';
-            std::cout << '\n';
         }
-        std::cout << "The Dimension of solution space or Nullity is " << independent_vectors.size() << '\n';
-        //Apply Jordan elimination on augmented matrix to form Identity like matrix
-        // apply_jordan(n_unk, n_eq, equations.matrix);
+        else
+        {
+            apply_gauss_f_singular(equations.matrix);
+            apply_jordan_f_singular(equations.matrix);
 
-        // print_matrix(equations.matrix);
+            std::vector<std::string> free_variables = get_free_variables(equations);
 
-        // for (int i = 0; i < equations.var_table.size(); i++)
-        // {
-        //     cout << equations.var_table[i] << " = " << equations.matrix[i][n_unk] << '\n';
-        // }
+
+            print_matrix(equations.matrix);
+            std::vector<std::vector<double>> independent_vectors = get_independent_vectors(equations);
+            std::cout << "System has infinite solutions.\n";
+            std::cout << "A Basis of solution space:\n";
+            for (int i = 0; i < equations.var_table.size(); i++)
+            {
+                for (int j = 0; j < independent_vectors.size(); j++)
+                {
+                    std::cout << std::setw(4) << '|' << independent_vectors[j][i] << "|\t";
+                }
+                std::cout << '\n';
+            }
+            std::cout << "The Dimension of solution space or Nullity is " << independent_vectors.size() << '\n';
+        }
         return 0;
     }
     catch (std::exception& e)

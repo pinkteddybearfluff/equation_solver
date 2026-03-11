@@ -9,7 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/wcosmo/Desktop/Projects/matrixSuite/equation_parser.cpp" "CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o" "gcc" "CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o.d"
-  "/home/wcosmo/Desktop/Projects/matrixSuite/main.cpp" "CMakeFiles/matrix_utilities.dir/main.cpp.o" "gcc" "CMakeFiles/matrix_utilities.dir/main.cpp.o.d"
+  "/home/wcosmo/Desktop/Projects/matrixSuite/equation_solver.cpp" "CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o" "gcc" "CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o.d"
   "/home/wcosmo/Desktop/Projects/matrixSuite/matrix_utilities.cpp" "CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o" "gcc" "CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o.d"
   "" "matrix_utilities" "gcc" "CMakeFiles/matrix_utilities.dir/link.d"
   )

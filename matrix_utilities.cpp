@@ -1,6 +1,6 @@
 #include "matrix_utilities.h"
 
-void apply_gaussian(int n_unk, int n_eq, std::vector<std::vector<double>>& matrix)
+int apply_gaussian(int n_unk, int n_eq, std::vector<std::vector<double>>& matrix)
 {
     for (int i = 0; i < n_eq; ++i)
     {
@@ -29,11 +29,7 @@ void apply_gaussian(int n_unk, int n_eq, std::vector<std::vector<double>>& matri
                 std::cout << "System has no solution. \n";
                 throw InconsistentSystem();
             }
-            else
-            {
-                std::cout << "System has infinite solutions.\n";
-                throw InconsistentSystem();
-            }
+            return -1;
         }
         for (int j = i + 1; j < n_eq; ++j)
         {
@@ -44,6 +40,7 @@ void apply_gaussian(int n_unk, int n_eq, std::vector<std::vector<double>>& matri
             }
         }
     }
+    return 0;
 }
 
 void apply_gauss_f_singular(std::vector<std::vector<double>>& matrix)
@@ -101,7 +98,6 @@ void apply_jordan_f_singular(std::vector<std::vector<double>>& matrix)
             if (matrix[i][j] != 0 && !pivot_exists)
             {
                 pivot_exists = true;
-                std::cout << i << ", " << j << "\n";
                 double pivot = matrix[i][j];
                 for (int k = i - 1; k >= 0; --k)
                 {

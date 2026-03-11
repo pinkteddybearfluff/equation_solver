@@ -72,19 +72,19 @@ include CMakeFiles/matrix_utilities.dir/flags.make
 CMakeFiles/matrix_utilities.dir/codegen:
 .PHONY : CMakeFiles/matrix_utilities.dir/codegen
 
-CMakeFiles/matrix_utilities.dir/main.cpp.o: CMakeFiles/matrix_utilities.dir/flags.make
-CMakeFiles/matrix_utilities.dir/main.cpp.o: /home/wcosmo/Desktop/Projects/matrixSuite/main.cpp
-CMakeFiles/matrix_utilities.dir/main.cpp.o: CMakeFiles/matrix_utilities.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wcosmo/Desktop/Projects/matrixSuite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matrix_utilities.dir/main.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix_utilities.dir/main.cpp.o -MF CMakeFiles/matrix_utilities.dir/main.cpp.o.d -o CMakeFiles/matrix_utilities.dir/main.cpp.o -c /home/wcosmo/Desktop/Projects/matrixSuite/main.cpp
+CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o: CMakeFiles/matrix_utilities.dir/flags.make
+CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o: /home/wcosmo/Desktop/Projects/matrixSuite/equation_solver.cpp
+CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o: CMakeFiles/matrix_utilities.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/home/wcosmo/Desktop/Projects/matrixSuite/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o -MF CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o.d -o CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o -c /home/wcosmo/Desktop/Projects/matrixSuite/equation_solver.cpp
 
-CMakeFiles/matrix_utilities.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/matrix_utilities.dir/main.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wcosmo/Desktop/Projects/matrixSuite/main.cpp > CMakeFiles/matrix_utilities.dir/main.cpp.i
+CMakeFiles/matrix_utilities.dir/equation_solver.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/matrix_utilities.dir/equation_solver.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/wcosmo/Desktop/Projects/matrixSuite/equation_solver.cpp > CMakeFiles/matrix_utilities.dir/equation_solver.cpp.i
 
-CMakeFiles/matrix_utilities.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/matrix_utilities.dir/main.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wcosmo/Desktop/Projects/matrixSuite/main.cpp -o CMakeFiles/matrix_utilities.dir/main.cpp.s
+CMakeFiles/matrix_utilities.dir/equation_solver.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/matrix_utilities.dir/equation_solver.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/wcosmo/Desktop/Projects/matrixSuite/equation_solver.cpp -o CMakeFiles/matrix_utilities.dir/equation_solver.cpp.s
 
 CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o: CMakeFiles/matrix_utilities.dir/flags.make
 CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o: /home/wcosmo/Desktop/Projects/matrixSuite/equation_parser.cpp
@@ -116,14 +116,14 @@ CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.s: cmake_force
 
 # Object files for target matrix_utilities
 matrix_utilities_OBJECTS = \
-"CMakeFiles/matrix_utilities.dir/main.cpp.o" \
+"CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o" \
 "CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o" \
 "CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o"
 
 # External object files for target matrix_utilities
 matrix_utilities_EXTERNAL_OBJECTS =
 
-matrix_utilities: CMakeFiles/matrix_utilities.dir/main.cpp.o
+matrix_utilities: CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o
 matrix_utilities: CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o
 matrix_utilities: CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o
 matrix_utilities: CMakeFiles/matrix_utilities.dir/build.make

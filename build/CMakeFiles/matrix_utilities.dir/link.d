@@ -2,7 +2,7 @@ matrix_utilities: \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crt1.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/../../../../lib64/crti.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o \
-  CMakeFiles/matrix_utilities.dir/main.cpp.o \
+  CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o \
   CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o \
   CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o \
   /usr/lib/gcc/x86_64-redhat-linux/15/libstdc++.so \
@@ -39,7 +39,7 @@ matrix_utilities: \
 
 /usr/lib/gcc/x86_64-redhat-linux/15/crtbegin.o:
 
-CMakeFiles/matrix_utilities.dir/main.cpp.o:
+CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o:
 
 CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o:
 

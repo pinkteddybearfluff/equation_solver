@@ -2,6 +2,7 @@
 #define MATRIXSUITE_FACILITIES_H
 
 #include <string>
+#include <stdexcept>
 
 inline void error(const std::string& s)
 {
