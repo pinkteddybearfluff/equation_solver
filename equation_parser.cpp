@@ -1,16 +1,16 @@
 #include "equation_parser.h"
 
 //returns a string with only alphabet and digits
-string get_string()
+std::string get_string()
 {
     char ch;
-    string my_string;
-    while (cin)
+    std::string my_string;
+    while (std::cin)
     {
-        cin >> ch;
+        std::cin >> ch;
         if (!isalpha(ch) && !isdigit(ch))
         {
-            cin.putback(ch);
+            std::cin.putback(ch);
             return my_string;
         }
         my_string.push_back(ch);
@@ -19,9 +19,9 @@ string get_string()
 }
 
 //checks if an unknown is new or old
-bool is_unique(string var_name, vector<string>& var_table)
+bool is_unique(std::string var_name, std::vector<std::string>& var_table)
 {
-    for (const string& var : var_table)
+    for (const std::string& var : var_table)
     {
         if (var == var_name)
         {
@@ -32,7 +32,7 @@ bool is_unique(string var_name, vector<string>& var_table)
 }
 
 //get column number for the respective variable name in order of declaration
-int get_colv(string var_name, vector<string>& var_table)
+int get_colv(std::string var_name, std::vector<std::string>& var_table)
 {
     for (int i = 0; i < var_table.size(); i++)
     {
@@ -48,18 +48,18 @@ int get_colv(string var_name, vector<string>& var_table)
 systemOfEq equation_parser(int n_eq, int n_unk)
 {
     //Augmented matrix
-    vector<vector<double>> matrix(n_eq, vector<double>(n_unk + 1));
-    vector<string> var_table;
+    std::vector<std::vector<double>> matrix(n_eq, std::vector<double>(n_unk + 1));
+    std::vector<std::string> var_table;
 
     char ch;
     bool has_coeff;
     int sign = 1;
     double coeff;
-    string var_name;
+    std::string var_name;
     int equation_no = 0;
     while (equation_no < n_eq)
     {
-        cin >> ch;
+        std::cin >> ch;
         if (ch == '+')
         {
             sign = 1;
@@ -70,13 +70,13 @@ systemOfEq equation_parser(int n_eq, int n_unk)
         }
         else if (isdigit(ch))
         {
-            cin.putback(ch);
-            cin >> coeff;
+            std::cin.putback(ch);
+            std::cin >> coeff;
             has_coeff = true;
         }
         else if (isalpha(ch))
         {
-            cin.putback(ch);
+            std::cin.putback(ch);
             var_name = get_string();
 
             //Variable declaration for new variable
@@ -107,7 +107,7 @@ systemOfEq equation_parser(int n_eq, int n_unk)
         else if (ch == '=')
         {
             int rhs;
-            cin >> rhs;
+            std::cin >> rhs;
             matrix[equation_no][n_unk] = rhs;
         }
         else if (isspace(ch)) { continue; }
@@ -132,11 +132,11 @@ systemOfEq equation_parser(int n_eq, int n_unk)
     return equations;
 }
 
-vector<string> get_free_variables(systemOfEq equations)
+std::vector<std::string> get_free_variables(systemOfEq equations)
 {
-    vector<string> free_variables;
-    vector<string> var_table = equations.var_table;
-    vector<vector<double>> matrix = equations.matrix;
+    std::vector<std::string> free_variables;
+    std::vector<std::string> var_table = equations.var_table;
+    std::vector<std::vector<double>> matrix = equations.matrix;
     for (int i = 0; i < matrix.size();)
     {
         for (int j = 0; j < matrix[0].size();)
@@ -161,12 +161,12 @@ vector<string> get_free_variables(systemOfEq equations)
     return free_variables;
 }
 
-vector<vector<double>> get_independent_vectors(systemOfEq equations)
+std::vector<std::vector<double>> get_independent_vectors(systemOfEq equations)
 {
-    vector<vector<double>> independent_variables;
-    vector<string> free_variables = get_free_variables(equations);
-    vector<vector<double>> matrix = equations.matrix;
-    vector<double> X(equations.var_table.size(), 0);
+    std::vector<std::vector<double>> independent_variables;
+    std::vector<std::string> free_variables = get_free_variables(equations);
+    std::vector<std::vector<double>> matrix = equations.matrix;
+    std::vector<double> X(equations.var_table.size(), 0);
     for (int i = 0; i < free_variables.size(); i++)
     {
         bool pivot_exists = false;

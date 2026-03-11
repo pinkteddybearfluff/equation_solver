@@ -12,7 +12,7 @@ set(PROJECT_HEADERS
 )
 
 set(PROJECT_SOURCES
-        main.cpp
+        equation_solver.cpp
         equation_parser.cpp
         matrix_utilities.cpp)
 

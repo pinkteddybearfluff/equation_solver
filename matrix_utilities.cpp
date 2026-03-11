@@ -1,6 +1,6 @@
 #include "matrix_utilities.h"
 
-void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
+void apply_gaussian(int n_unk, int n_eq, std::vector<std::vector<double>>& matrix)
 {
     for (int i = 0; i < n_eq; ++i)
     {
@@ -26,12 +26,12 @@ void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
         {
             if (matrix[i][i + 1] != 0)
             {
-                cout << "System has no solution. \n";
+                std::cout << "System has no solution. \n";
                 throw InconsistentSystem();
             }
             else
             {
-                cout << "System has infinite solutions.\n";
+                std::cout << "System has infinite solutions.\n";
                 throw InconsistentSystem();
             }
         }
@@ -46,8 +46,7 @@ void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
     }
 }
 
-
-void apply_gauss_f_singular(vector<vector<double>>& matrix)
+void apply_gauss_f_singular(std::vector<std::vector<double>>& matrix)
 {
     for (int i = 0, m = 0; i < matrix.size();)
     {
@@ -92,7 +91,7 @@ void apply_gauss_f_singular(vector<vector<double>>& matrix)
     }
 }
 
-void apply_jordan_f_singular(vector<vector<double>>& matrix)
+void apply_jordan_f_singular(std::vector<std::vector<double>>& matrix)
 {
     bool pivot_exists = false;
     for (int i = matrix.size() - 1; i >= 0; --i)
@@ -102,7 +101,7 @@ void apply_jordan_f_singular(vector<vector<double>>& matrix)
             if (matrix[i][j] != 0 && !pivot_exists)
             {
                 pivot_exists = true;
-                cout << i << ", " << j << "\n";
+                std::cout << i << ", " << j << "\n";
                 double pivot = matrix[i][j];
                 for (int k = i - 1; k >= 0; --k)
                 {
@@ -122,7 +121,7 @@ void apply_jordan_f_singular(vector<vector<double>>& matrix)
     }
 }
 
-void apply_jordan(int n_uk, int n_eq, vector<vector<double>>& matrix)
+void apply_jordan(int n_uk, int n_eq, std::vector<std::vector<double>>& matrix)
 {
     for (int i = n_eq - 1; i >= 0; --i)
     {
@@ -142,14 +141,14 @@ void apply_jordan(int n_uk, int n_eq, vector<vector<double>>& matrix)
     }
 }
 
-void print_matrix(const vector<vector<double>>& matrix)
+void print_matrix(const std::vector<std::vector<double>>& matrix)
 {
-    for (const vector<double>& row : matrix)
+    for (const std::vector<double>& row : matrix)
     {
         for (const double num : row)
         {
-            cout << num << "\t";
+            std::cout << num << "\t";
         }
-        cout << '\n';
+        std::cout << '\n';
     }
 }

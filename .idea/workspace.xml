@@ -29,77 +29,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee34ad1-dc46-4d30-8e02-cabc4d1f5e53" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.vscode/tasks.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/query/client-vscode/query.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/cache-v2-aaa6e71aae667d616947.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/cmakeFiles-v1-5ced2bb70259fbbe5988.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/codemodel-v2-e2cfdcc44f2ba11e4faa.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/index-2026-03-05T04-24-02-0821.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-matrix_utilities-Debug-8f567cd7e714ccf5fdc7.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/toolchains-v1-1ab1a58c6da679145e16.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeCCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeCXXCompiler.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeSystem.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdC/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdCXX/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/compiler_depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/compiler_depend.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/link.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/test.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/test.cpp.o.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/DependInfo.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/build.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/cmake_clean.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/compiler_depend.internal" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/compiler_depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/compiler_depend.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/depend.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/flags.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/link.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/link.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/main.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/main.cpp.o.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o.d" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/progress.make" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/matrix_utilities" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equation_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/equation_parser.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/equation_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/equation_parser.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/equation_solver" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/equation_solver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/facilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/facilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/equation_solver.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix_utilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_utilities.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix_utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_utilities.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -183,7 +122,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="CMake Application.matrixSuite">
+  <component name="RunManager" selected="C/C++ File.equation_solver.cpp">
     <configuration name="matrixSuite" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
     </configuration>
@@ -234,19 +173,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="CMake Debug.matrixSuite" />
-      <item itemvalue="CMake Application.matrixSuite" />
-      <item itemvalue="CMake Application.matrix" />
       <item itemvalue="C/C++ File.equation_solver.cpp (1)" />
+      <item itemvalue="C/C++ File.test.cpp" />
       <item itemvalue="C/C++ File.equation_solver.cpp" />
       <item itemvalue="C/C++ File.matrix.cpp" />
-      <item itemvalue="C/C++ File.test.cpp" />
       <item itemvalue="C/C++ File.test_file.cpp" />
+      <item itemvalue="CMake Application.matrixSuite" />
+      <item itemvalue="CMake Application.matrix" />
+      <item itemvalue="CMake Debug.matrixSuite" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="C/C++ File.equation_solver.cpp (1)" />
         <item itemvalue="C/C++ File.equation_solver.cpp" />
+        <item itemvalue="C/C++ File.equation_solver.cpp (1)" />
         <item itemvalue="C/C++ File.test.cpp" />
         <item itemvalue="C/C++ File.matrix.cpp" />
         <item itemvalue="C/C++ File.test_file.cpp" />
@@ -282,7 +221,7 @@
       <workItem from="1772681413696" duration="2853000" />
       <workItem from="1772685411186" duration="244000" />
       <workItem from="1773053988201" duration="499000" />
-      <workItem from="1773246992662" duration="32000" />
+      <workItem from="1773246992662" duration="1870000" />
     </task>
     <servers />
   </component>

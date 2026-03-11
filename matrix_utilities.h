@@ -4,19 +4,16 @@
 
 #include <vector>
 #include "facilities.h"
-
-using namespace std;
+#include <iostream>
 
 class InconsistentSystem
 {
 };
 
 void apply_gauss_f_singular(std::vector<std::vector<double>>& matrix);
-void apply_jordan_f_singular(vector<vector<double>>& matrix);
-
+void apply_jordan_f_singular(std::vector<std::vector<double>>& matrix);
 
 void apply_jordan(int no_of_unknowns, int no_of_equations, std::vector<std::vector<double>>& matrix);
 void print_matrix(const std::vector<std::vector<double>>& matrix);
-
 
 #endif //MATRIXSUITE_MATRIX_UTILITIES_H
