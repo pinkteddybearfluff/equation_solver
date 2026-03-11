@@ -1,0 +1,1 @@
+/usr/bin/g++ -g -Wl,--dependency-file=CMakeFiles/matrix_utilities.dir/link.d CMakeFiles/matrix_utilities.dir/main.cpp.o CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o -o matrix_utilities

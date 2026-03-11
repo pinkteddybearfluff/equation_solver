@@ -5,6 +5,8 @@
   </component>
   <component name="BackendCodeEditorMiscSettings">
     <option name="/Default/Housekeeping/FeatureSuggestion/FeatureSuggestionManager/DisabledSuggesters/=SwitchToGoToActionSuggester/@EntryIndexedValue" value="true" type="bool" />
+    <option name="/Default/Housekeeping/GlobalSettingsUpgraded/IsUpgraded/@EntryValue" value="true" type="bool" />
+    <option name="/Default/RiderDebugger/RiderRestoreDecompile/RestoreDecompileSetting/@EntryValue" value="false" type="bool" />
   </component>
   <component name="CMakePresetLoader">{
   &quot;useNewFormat&quot;: true
@@ -27,8 +29,75 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5ee34ad1-dc46-4d30-8e02-cabc4d1f5e53" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.vscode/tasks.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/query/client-vscode/query.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/cache-v2-aaa6e71aae667d616947.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/cmakeFiles-v1-5ced2bb70259fbbe5988.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/codemodel-v2-e2cfdcc44f2ba11e4faa.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/directory-.-Debug-f5ebdc15457944623624.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/index-2026-03-05T04-24-02-0821.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/target-matrix_utilities-Debug-8f567cd7e714ccf5fdc7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/.cmake/api/v1/reply/toolchains-v1-1ab1a58c6da679145e16.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeCCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeCXXCompiler.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeDetermineCompilerABI_C.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeDetermineCompilerABI_CXX.bin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CMakeSystem.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdC/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/3.31.10/CompilerIdCXX/a.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeConfigureLog.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/cmake.check_cache" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/link.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/test.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix.dir/test.cpp.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/DependInfo.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/build.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/cmake_clean.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/compiler_depend.internal" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/compiler_depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/compiler_depend.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/depend.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/equation_solver.cpp.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/flags.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/link.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/link.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/main.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/main.cpp.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o.d" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/matrix_utilities.dir/progress.make" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/Makefile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/cmake_install.cmake" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/matrix_utilities" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation_parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/equation_parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation_parser.h" beforeDir="false" afterPath="$PROJECT_DIR$/equation_parser.h" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation_solver" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/equation_solver.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix_utilities.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_utilities.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/matrix_utilities.h" beforeDir="false" afterPath="$PROJECT_DIR$/matrix_utilities.h" afterDir="false" />
     </list>
@@ -83,36 +152,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "C/C++ File.equation_solver.cpp.executor": "Run",
-    "C/C++ File.matrix.cpp.executor": "Run",
-    "C/C++ File.test_file.cpp.executor": "Run",
-    "CMake Application.matrix.executor": "Run",
-    "CMake Application.matrixSuite.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.RadMigrateCodeStyle": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "RunOnceActivity.west.config.association.type.startup.service": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "org.rust.first.attach.projects": "true",
-    "settings.editor.selected.configurable": "editor.preferences.tabs",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;C/C++ File.equation_solver.cpp (1).executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.equation_solver.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.matrix.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.test.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;C/C++ File.test_file.cpp.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.matrix.executor&quot;: &quot;Run&quot;,
+    &quot;CMake Application.matrixSuite.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.RadMigrateCodeStyle&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.west.config.association.type.startup.service&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;org.rust.first.attach.projects&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.tabs&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="C/C++ File.equation_solver.cpp">
+}</component>
+  <component name="RunManager" selected="CMake Application.matrixSuite">
     <configuration name="matrixSuite" type="CMakeListConfigurationType" factoryName="CMakeListConfigurationFactory">
       <method v="2" />
     </configuration>
@@ -126,6 +197,12 @@
         <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <configuration name="equation_solver.cpp (1)" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="equation_solver.cpp" CONFIG_NAME="equation_solver.cpp">
+      <option name="sourceFile" value="main.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="equation_solver.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="equation_solver.cpp" CONFIG_NAME="equation_solver.cpp">
       <option name="sourceFile" value="equation_solver.cpp" />
       <method v="2">
@@ -134,6 +211,12 @@
     </configuration>
     <configuration name="matrix.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="matrix.cpp" CONFIG_NAME="matrix.cpp">
       <option name="sourceFile" value="matrix.cpp" />
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.cpp" type="CppFileRunConfiguration" factoryName="CppFileRunConfiguration" temporary="true" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" EMULATE_TERMINAL="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="matrixSuite" TARGET_NAME="test.cpp" CONFIG_NAME="test.cpp">
+      <option name="sourceFile" value="test.cpp" />
       <method v="2">
         <option name="com.jetbrains.cidr.cpp.runfile.CppFileBuildBeforeRunTaskProvider$BasicBuildBeforeRunTask" enabled="true" />
       </method>
@@ -151,16 +234,20 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="C/C++ File.equation_solver.cpp" />
-      <item itemvalue="C/C++ File.matrix.cpp" />
-      <item itemvalue="C/C++ File.test_file.cpp" />
+      <item itemvalue="CMake Debug.matrixSuite" />
       <item itemvalue="CMake Application.matrixSuite" />
       <item itemvalue="CMake Application.matrix" />
-      <item itemvalue="CMake Debug.matrixSuite" />
+      <item itemvalue="C/C++ File.equation_solver.cpp (1)" />
+      <item itemvalue="C/C++ File.equation_solver.cpp" />
+      <item itemvalue="C/C++ File.matrix.cpp" />
+      <item itemvalue="C/C++ File.test.cpp" />
+      <item itemvalue="C/C++ File.test_file.cpp" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="C/C++ File.equation_solver.cpp (1)" />
         <item itemvalue="C/C++ File.equation_solver.cpp" />
+        <item itemvalue="C/C++ File.test.cpp" />
         <item itemvalue="C/C++ File.matrix.cpp" />
         <item itemvalue="C/C++ File.test_file.cpp" />
       </list>
@@ -187,7 +274,15 @@
       <workItem from="1770795781106" duration="6107000" />
       <workItem from="1770811539031" duration="4171000" />
       <workItem from="1770827139144" duration="1599000" />
-      <workItem from="1771478724209" duration="108000" />
+      <workItem from="1771478724209" duration="4993000" />
+      <workItem from="1771484731994" duration="4024000" />
+      <workItem from="1772108369041" duration="5323000" />
+      <workItem from="1772201634749" duration="1147000" />
+      <workItem from="1772205484123" duration="3657000" />
+      <workItem from="1772681413696" duration="2853000" />
+      <workItem from="1772685411186" duration="244000" />
+      <workItem from="1773053988201" duration="499000" />
+      <workItem from="1773246992662" duration="32000" />
     </task>
     <servers />
   </component>

@@ -1,6 +1,5 @@
 #include "matrix_utilities.h"
 
-
 void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
 {
     for (int i = 0; i < n_eq; ++i)
@@ -48,19 +47,24 @@ void apply_gaussian(int n_unk, int n_eq, vector<vector<double>>& matrix)
 }
 
 
-void apply_gauss_f_singular(int n_unk, int n_eq, vector<vector<double>>& matrix)
+void apply_gauss_f_singular(vector<vector<double>>& matrix)
 {
-    for (int i = 0; i < n_eq; ++i)
+    for (int i = 0, m = 0; i < matrix.size();)
     {
-        //check if pivot is non-zero
-        if (matrix[i][i] == 0)
+        if (m >= matrix[0].size())
         {
-            for (int j = i + 1; j < n_eq; ++j)
+            return;
+        }
+
+        //check if pivot is non-zero
+        if (matrix[i][m] == 0)
+        {
+            for (int j = i + 1; j < matrix.size(); ++j)
             {
                 if (matrix[j][i] != 0)
                 {
                     //swap rows
-                    for (int k = i; k < n_unk + 1; k++)
+                    for (int k = i; k < matrix[0].size(); k++)
                     {
                         const double tmp = matrix[j][k];
                         matrix[j][k] = matrix[i][k];
@@ -70,14 +74,51 @@ void apply_gauss_f_singular(int n_unk, int n_eq, vector<vector<double>>& matrix)
             }
         }
 
-        for (int j = i + 1; j < n_eq; ++j)
+        if (matrix[i][m] == 0)
         {
-            const double multiplier = matrix[j][i] / matrix[i][i];
-            for (int k = i; k < n_unk + 1; k++)
+            ++m;
+            continue;
+        }
+        for (int j = i + 1; j < matrix.size(); ++j)
+        {
+            const double multiplier = matrix[j][m] / matrix[i][m];
+            for (int k = i; k < matrix[0].size(); k++)
             {
                 matrix[j][k] = matrix[j][k] - matrix[i][k] * multiplier;
             }
         }
+        ++i;
+        ++m;
+    }
+}
+
+void apply_jordan_f_singular(vector<vector<double>>& matrix)
+{
+    bool pivot_exists = false;
+    for (int i = matrix.size() - 1; i >= 0; --i)
+    {
+        for (int j = 0; j < matrix[0].size(); ++j)
+        {
+            if (matrix[i][j] != 0 && !pivot_exists)
+            {
+                pivot_exists = true;
+                cout << i << ", " << j << "\n";
+                double pivot = matrix[i][j];
+                for (int k = i - 1; k >= 0; --k)
+                {
+                    double multiplier = matrix[k][j] / pivot;
+                    for (int l = j; l < matrix[0].size(); l++)
+                    {
+                        matrix[k][l] = matrix[k][l] - matrix[i][l] * multiplier;
+                    }
+                }
+                for (int m = j; m < matrix[0].size(); ++m)
+                {
+                    matrix[i][m] /= pivot;
+                }
+            }
+        }
+        pivot_exists = false;
     }
 }
 

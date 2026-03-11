@@ -1,0 +1,3 @@
+/home/wcosmo/Desktop/Projects/matrixSuite/build/CMakeFiles/matrix_utilities.dir
+/home/wcosmo/Desktop/Projects/matrixSuite/build/CMakeFiles/edit_cache.dir
+/home/wcosmo/Desktop/Projects/matrixSuite/build/CMakeFiles/rebuild_cache.dir

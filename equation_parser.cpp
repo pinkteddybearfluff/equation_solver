@@ -120,24 +120,81 @@ systemOfEq equation_parser(int n_eq, int n_unk)
         {
             error("Too many variables than expected");
         }
-        else if (isspace(ch)) { continue; }
-        else
-        {
-            error("unknown character");
-        }
-
-        if (var_table.size() > n_unk)
-        {
-            error("Too many variables than expected");
-        }
-        else if (var_table.size() == 0)
-        {
-            error("expected at least one variable");
-        }
+        // else if (var_table.size() == 0)
+        // {
+        //     error("expected at least one variable");
+        // }
     }
 
     systemOfEq equations;
     equations.var_table = var_table;
     equations.matrix = matrix;
     return equations;
+}
+
+vector<string> get_free_variables(systemOfEq equations)
+{
+    vector<string> free_variables;
+    vector<string> var_table = equations.var_table;
+    vector<vector<double>> matrix = equations.matrix;
+    for (int i = 0; i < matrix.size();)
+    {
+        for (int j = 0; j < matrix[0].size();)
+        {
+            if (i < matrix.size() && matrix[i][j] != 0)
+            {
+                i++;
+                j++;
+            }
+            else
+            {
+                free_variables.push_back(var_table[j]);
+                j++;
+            }
+
+            if (j == var_table.size())
+            {
+                return free_variables;
+            }
+        }
+    }
+    return free_variables;
+}
+
+vector<vector<double>> get_independent_vectors(systemOfEq equations)
+{
+    vector<vector<double>> independent_variables;
+    vector<string> free_variables = get_free_variables(equations);
+    vector<vector<double>> matrix = equations.matrix;
+    vector<double> X(equations.var_table.size(), 0);
+    for (int i = 0; i < free_variables.size(); i++)
+    {
+        bool pivot_exists = false;
+        X[get_colv(free_variables[i], equations.var_table)] = 1;
+        for (int j = matrix.size() - 1; j >= 0; j--)
+        {
+            for (int k = 0; k < matrix[0].size(); k++)
+            {
+                if (matrix[j][k] != 0 && !pivot_exists)
+                {
+                    pivot_exists = true;
+                    double tmp_sum = 0;
+                    for (int l = k + 1; l < matrix[0].size() - 1; l++)
+                    {
+                        tmp_sum += matrix[j][l] * X[l];
+                    }
+                    X[k] = matrix[j][matrix[0].size() - 1] - tmp_sum;
+                }
+            }
+            pivot_exists = false;
+        }
+        independent_variables.push_back(X);
+
+        //reset vector X
+        for (double& var_value : X)
+        {
+            var_value = 0;
+        }
+    }
+    return independent_variables;
 }

@@ -1,0 +1,20 @@
+[
+{
+  "directory": "/home/wcosmo/Desktop/Projects/matrixSuite/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/matrix_utilities.dir/main.cpp.o -c /home/wcosmo/Desktop/Projects/matrixSuite/main.cpp",
+  "file": "/home/wcosmo/Desktop/Projects/matrixSuite/main.cpp",
+  "output": "CMakeFiles/matrix_utilities.dir/main.cpp.o"
+},
+{
+  "directory": "/home/wcosmo/Desktop/Projects/matrixSuite/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o -c /home/wcosmo/Desktop/Projects/matrixSuite/equation_parser.cpp",
+  "file": "/home/wcosmo/Desktop/Projects/matrixSuite/equation_parser.cpp",
+  "output": "CMakeFiles/matrix_utilities.dir/equation_parser.cpp.o"
+},
+{
+  "directory": "/home/wcosmo/Desktop/Projects/matrixSuite/build",
+  "command": "/usr/bin/g++   -g -std=gnu++17 -o CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o -c /home/wcosmo/Desktop/Projects/matrixSuite/matrix_utilities.cpp",
+  "file": "/home/wcosmo/Desktop/Projects/matrixSuite/matrix_utilities.cpp",
+  "output": "CMakeFiles/matrix_utilities.dir/matrix_utilities.cpp.o"
+}
+]

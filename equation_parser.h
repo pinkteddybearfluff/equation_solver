@@ -18,6 +18,7 @@ string get_string();
 bool is_unique(string var_name, vector<string>& var_table);
 int get_colv(string var_name, vector<string>& var_table);
 systemOfEq equation_parser(int n_eq, int n_unk);
-
+vector<string> get_free_variables(systemOfEq);
+vector<vector<double>> get_independent_vectors(systemOfEq equations);
 
 #endif //MATRIXSUITE_EQUATION_PARSER_H
